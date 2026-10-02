@@ -18,10 +18,10 @@ job_template = {
 }
 
 
-# Create shallow copy
+
 shallow_job = create_shallow_copy(job_template)
 
-# Create deep copy
+
 deep_job = create_deep_copy(job_template)
 
 
@@ -37,7 +37,7 @@ print("\nDeep Copy:")
 print(deep_job)
 
 
-# Change city in shallow copy
+
 shallow_job["customer"]["address"]["city"] = "Karachi"
 
 
@@ -53,7 +53,7 @@ print("\nDeep Copy:")
 print(deep_job)
 
 
-# Change city in deep copy
+
 deep_job["customer"]["address"]["city"] = "Islamabad"
 
 
